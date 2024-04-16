@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff4d4d, #990000);
+  color: #fff;
+  padding-top: 4%;
+  padding-left: 10%;
+  display: grid;
+  grid-template-columns: 1fr; /* Satu kolom */
+  grid-template-rows: auto auto auto; /* Tiga baris otomatis */
+  gap: 20px; /* Jarak antar elemen */
+}
+
+.container h1 {
+  font-size: 35px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.container h1 img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.container button {
+  background: linear-gradient(135deg, #ff4d4d, #990000);
+  color: #fff;
+  font-size: 18px;
+  outline: 0;
+  border: 0;
+  border-radius: 20px;
+  padding: 14px 24px;
+  cursor: pointer;
+}
+
+.input-box {
+  width: 100%;
+  max-width: 500px;
+  min-height: 150px;
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.input-box img {
+  width: 25px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
