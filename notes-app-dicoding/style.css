@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff4d4d, #990000);
+  color: #fff;
+  padding-top: 4%;
+  padding-left: 10%;
+  grid-template-columns: 1fr; /* Satu kolom */
+  grid-template-rows: auto auto auto; /* Tiga baris otomatis */
+  gap: 20px; /* Jarak antar elemen */
+}
+.notes-container {
+  display: grid;
+}
+.container h1 {
+  font-size: 35px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.container h1 img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.container button {
+  background: linear-gradient(135deg, #ff4d4d, #990000);
+  color: #fff;
+  font-size: 18px;
+  outline: 0;
+  border: 0;
+  border-radius: 20px;
+  padding: 14px 24px;
+  cursor: pointer;
+}
+
+.note {
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  border-radius: 8px; /* Tambahkan border radius */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #ff4d4d; /* Tambahkan border kiri berwarna merah */
+}
+
+/* Gaya untuk popup */
+.popup {
+  display: none; /* Defaultnya, popup tidak ditampilkan */
+  position: fixed; /* Popup tetap berada di posisi yang sama bahkan saat menggulir halaman */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Latar belakang transparan dengan opasitas */
+  z-index: 999; /* Popup berada di atas konten lainnya */
+}
+
+.popup-content {
+  background-color: red;
+  max-width: 400px;
+  margin: 100px auto; /* Menengahkan popup di tengah layar */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Efek bayangan */
+  position: relative;
+  text-align: center; /* Memusatkan konten */
+}
+
+.popup-content input,
+.popup-content textarea {
+  width: 100%; /* Mengatur lebar input dan textarea menjadi 100% */
+  padding: 10px; /* Menambahkan padding pada input dan textarea */
+  margin-bottom: 15px; /* Menambahkan margin bawah pada input dan textarea */
+  box-sizing: border-box; /* Menyesuaikan ukuran box */
+}
+.custom-alert {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 999;
+}
+
+.alert-content {
+  position: relative;
+}
+
+.close-alert {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+#alertMessage {
+  margin: 0;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.input-box {
+  width: 100%;
+  max-width: 500px;
+  min-height: 150px;
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.input-box img {
+  width: 25px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}

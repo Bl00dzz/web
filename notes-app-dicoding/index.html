@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes App Submission</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><img src="images/notes.png" />Catatan</h1>
+      <button id="openPopup">Tambah Catatan</button>
+
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <span id="closePopup" class="close">&times;</span>
+          <h2>Tambah Catatan</h2>
+          <input type="text" id="noteTitle" placeholder="Judul" />
+          <textarea id="noteDescription" placeholder="Deskripsi"></textarea>                                                                                                                              
+          <button id="addNoteBtn">Tambah</button>
+        </div>
+      </div>
+
+      <ul id="noteList"></ul>
+
+      <div class="notes-container"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
